@@ -1,0 +1,295 @@
+html {
+    margin: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    line-height: 1;
+    background-color: #F9F9F9;
+    font-family: 'Segoe UI.ttf',Arial,sans-serif;
+    margin: auto 0;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+header{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 13px;
+    background-color: #C4170C;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.headerEsquerdo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transform: scale(0.8);
+    align-items: center;
+    width: 33%;
+    height: 4vh;
+    margin-left: 30px;
+}
+
+.headerEsquerdo p{
+    width: 33%;
+    text-align: center;
+    float: right;    
+    font-family: 'Segoe UI';
+    font-size: max(25px, 1.5vw);  
+    margin-top: 23px;
+    margin-right: 260px;
+    color: #FFFFFF;
+}
+
+.logoG1{
+    transform: scale(0.8);
+    width: 33%;
+    height: 100%;
+    padding: 1%;
+    align-items: center;
+    text-align: center;
+    margin-right: 70px;
+}
+
+.headerDireito{
+    width: 33%;
+}
+
+::placeholder{
+    background-color: #8B0000;
+    text-align: left;
+    border: transparent;
+}
+
+.campoPesquisa{
+    display: flex;
+    justify-content: right;
+    margin: 0 auto;
+    height: 4vh;
+}
+
+#fieldset{
+    display: flex;
+    border: 1px solid #707070;
+    height: 2vh;
+    background-color: #8B0000;
+    background-image: url(./imgs/firstsearch.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    background-size: 20px 20px;
+    margin-right: 30px;
+    border-radius: 6px;
+}
+
+#fieldset input{
+    height: 3vh;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    background-color: transparent;
+    border: transparent;
+    padding-left: 0;
+    margin: 0 10%;
+}
+
+.titulo{
+    text-transform: uppercase;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 20px;
+    letter-spacing: 0px;
+}
+
+.gridContainer{
+    margin: 40px auto;
+    max-width: 1400px;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    justify-content: center;
+    padding: 0 20px;
+    grid-template-areas: "gridItemFGTS gridItemFGTS gridItemCaminhao"
+                         "gridItemFGTS gridItemFGTS gridItemLady";
+}
+
+.gridItemFGTS{
+    display: grid;
+    border: 1px solid black;
+    padding: 15px 15px 40px;
+    align-content: center;
+    grid-area: gridItemFGTS;
+}
+
+.captionFGTS h2{
+    color: #8B0000;
+    font-size: max(22px, 1.0vw);
+}
+
+.captionFGTS p{
+    color: #8B0000;
+    font-size: max(18px, 1.0vw);
+}
+
+.caption h2{
+    color: black;
+    font-size: max(18px, 1.0vw);
+}
+
+.gridItemCaminhao{
+    display: grid;
+    padding: 2px 15px 40px;
+    grid-area: gridItemCaminhao;
+    align-content: center;
+}
+
+.gridItemLady{
+    display: grid;
+    padding: 10px 15px 5px;
+    grid-area: gridItemLady;
+    align-content: center;
+}
+
+.caminhao{
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+
+.lady{
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.cardFlex{
+    align-self: center;
+    width: 96%;
+    padding: 10px;
+    margin: 1%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.notas{
+    align-self: left;
+    width: 50%;
+}
+
+.cardCaption{
+    width: 48%;
+    float: right;
+}
+
+.cardCaption h3{
+    font-size: max(18px, 1.1vw);
+    padding: 1px 0px;
+}
+
+.cardCaption h4{
+    font-size: max(25px, 2vw);
+    padding: 1px 0px;
+    color: #C4170C;
+}
+
+.cardCaption p{
+    font-size: max(18px, 1.1vw);
+    padding: 10px 0px;
+}
+
+.cardCaption span{
+    font-size: max(18px, 1.1vw);
+    color: #746565;
+    padding: 10px 0px;
+}
+
+.vejaMais{
+    background-color: #C4170C;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    font: normal normal 18px 18px Segoe UI;
+    font-size:18px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    top: 260px;
+    left: 298px;
+    width: 223px;
+    height: 53px;
+    margin-left: 42%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.containerEsquerda{
+    display:flex;
+    height: 16%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: #C4170C;
+
+}
+
+.footerCaption-1{
+    width: 90%;
+    height: auto;
+    display: flex;
+    column-gap: 1px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    font-size: 23px;
+    margin: 1% 5%;
+    color: #FFFFFF;
+}
+
+.logoFooter{
+    transform: scale(0.4);
+}
+
+.containerDireita{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items:center;
+    background-color: #C4170C;
+}
+
+.footerCaption-2{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-size: 19px;
+    column-gap: 180px;
+    color: #FFFFFF;
+}
+
+hr{
+    margin-top: 80px;
+    margin-bottom: -35;
+}
